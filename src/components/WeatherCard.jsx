@@ -194,7 +194,7 @@ export default function WeatherCard() {
     <div className="weather-card shrink-0">
       <button
         type="button"
-        className="weather-card__trigger flex h-20 w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
+        className="weather-card__trigger flex h-20 w-20 md:h-20 md:w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
         aria-label={
           weather.temp !== null
             ? `Cuaca hari ini ${weather.temp} derajat Celcius di ${weather.city}`
@@ -208,7 +208,7 @@ export default function WeatherCard() {
           <span className="text-xs font-medium text-slate-400 dark:text-slate-300">...</span>
         ) : (
           <>
-            <span className="text-xl font-bold leading-none text-slate-800 dark:text-slate-100">
+            <span className="text-2xl font-bold leading-none text-slate-800 dark:text-slate-100">
               {weather.temp !== null ? `${weather.temp}°` : "--"}
             </span>
             <span className="mt-1 line-clamp-2 px-1 text-[10px] font-medium leading-tight text-slate-500 dark:text-slate-300">

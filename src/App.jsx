@@ -122,6 +122,14 @@ export default function App() {
           </p>
         </header>
 
+        <div className="app__sidebar flex flex-row md:hidden gap-1 mb-2 overflow-x-auto whitespace-nowrap pb-2 scrollbar-hide">
+          <DateBox />
+          <WeatherCard />
+          <ScheduleCard />
+          <MusicCard />
+          <PomodoroCard />
+        </div>
+
         <div className="app__layout flex min-h-0 flex-1 items-stretch gap-3">
           <main className="app__surface flex min-h-0 min-w-0 flex-1 flex-col rounded-2xl border border-white/60 bg-white/70 p-5 shadow-xl shadow-indigo-500/15 backdrop-blur-md dark:border-slate-700/60 dark:bg-slate-900/70 dark:shadow-black/30 md:p-7">
             <AppToolbar
@@ -135,7 +143,7 @@ export default function App() {
 
             <TodoForm onAdd={addTodo} />
 
-            <div className="app__filters flex shrink-0 justify-center md:justify-start">
+            <div className="app__filters flex shrink-0 justify-start">
               <FilterButtons activeFilter={filter} onChangeFilter={setFilter} />
             </div>
 
@@ -152,7 +160,7 @@ export default function App() {
               />
             </div>
 
-            <footer className="app__footer mt-4 flex shrink-0 flex-col gap-3 border-t border-slate-200/80 pt-5 dark:border-slate-700/80 sm:flex-row sm:items-center sm:justify-between">
+            <footer className="app__footer mt-4 hidden sm:flex shrink-0 flex-col gap-3 border-t border-slate-200/80 pt-5 dark:border-slate-700/80 sm:flex-row sm:items-center sm:justify-between">
               <p className="app__counter text-sm text-slate-600 dark:text-slate-400">
                 {totalCount === 0 ? (
                   <span className="app__counter--empty font-medium">
@@ -188,7 +196,7 @@ export default function App() {
             </footer>
           </main>
 
-          <aside className="app__sidebar flex shrink-0 flex-col gap-3 self-start">
+          <aside className="hidden md:flex app__sidebar shrink-0 flex-col gap-3 self-start">
             <DateBox />
             <WeatherCard />
             <ScheduleCard />

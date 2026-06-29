@@ -145,7 +145,7 @@ export default function MusicCard() {
       <button
         type="button"
         className={
-          `music-card__trigger flex h-20 w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ` +
+          `music-card__trigger flex h-20 w-20 md:h-20 md:w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ` +
           (isPlaying ? "ring-2 ring-teal-300" : "")
         }
         aria-label="Putar musik instrumental anak secara acak"
@@ -155,7 +155,7 @@ export default function MusicCard() {
       >
         <Music2
           className={
-            `h-5 w-5 ` + (isPlaying ? "animate-pulse text-teal-500" : "text-indigo-500")
+            `h-5 w-5` + (isPlaying ? "animate-pulse text-teal-500" : "text-indigo-500")
           }
           aria-hidden
         />

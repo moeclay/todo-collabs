@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Download, Moon, Sun, Upload } from "lucide-react";
 
 const iconButtonClass =
-  "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/80 bg-white/90 text-slate-600 shadow-sm transition hover:bg-slate-50 hover:text-indigo-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 dark:border-slate-600/80 dark:bg-slate-800/90 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-indigo-400 dark:focus-visible:ring-offset-slate-900";
+  "hidden md:inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/80 bg-white/90 text-slate-600 shadow-sm transition hover:bg-slate-50 hover:text-indigo-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 dark:border-slate-600/80 dark:bg-slate-800/90 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-indigo-400 dark:focus-visible:ring-offset-slate-900";
 
 export default function AppToolbar({
   searchQuery,

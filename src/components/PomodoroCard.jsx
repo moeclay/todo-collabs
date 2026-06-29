@@ -213,7 +213,7 @@ export default function PomodoroCard() {
       <button
         type="button"
         className={
-          `pomodoro-card__trigger flex h-20 w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ` +
+          `pomodoro-card__trigger flex h-20 w-20 md:h-20 md:w-20 flex-col items-center justify-center rounded-xl border border-white/60 bg-white/70 text-center shadow-xl shadow-indigo-500/15 backdrop-blur-md transition hover:bg-white/90 dark:border-slate-600/60 dark:bg-slate-800/80 dark:shadow-black/30 dark:hover:bg-slate-700/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ` +
           (isRunning ? "ring-2 ring-rose-300" : "") +
           (isAlarm ? "animate-pulse ring-2 ring-rose-500" : "")
         }
@@ -224,7 +224,7 @@ export default function PomodoroCard() {
       >
         <Timer
           className={
-            `h-5 w-5 ` +
+            `h-5 w-5` +
             (isAlarm
               ? "text-rose-500"
               : isRunning
