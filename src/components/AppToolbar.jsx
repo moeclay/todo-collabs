@@ -57,7 +57,7 @@ export default function AppToolbar({
 
         <button
           type="button"
-          className={iconButtonClass+" hidden md:inline-block"}
+          className={iconButtonClass}
           aria-label="Export backup JSON"
           onClick={onExport}
         >
@@ -66,7 +66,7 @@ export default function AppToolbar({
 
         <button
           type="button"
-          className={iconButtonClass+" hidden md:inline-block"}
+          className={iconButtonClass}
           aria-label="Import backup JSON"
           onClick={() => fileInputRef.current?.click()}
         >
